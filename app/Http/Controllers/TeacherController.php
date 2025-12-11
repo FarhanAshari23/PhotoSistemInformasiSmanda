@@ -64,9 +64,9 @@ class TeacherController extends Controller
         ]);
 
         $name = $request->name;
-        $nisn = $request->nisn;
+        $nip = $request->nip;
 
-        $filename = "{$name}_{$nisn}.jpg";
+        $filename = "{$name}_{$nip}.jpg";
         $path = "public/teachers/{$filename}";
 
         if (Storage::exists($path)) {
